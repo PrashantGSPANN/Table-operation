@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import Fintab from "./Components/FinTab";
+import TableDoc from "./Components/Table";
 
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
     <>
       <h1>Tadaaa :</h1>
       <p></p>
-      <Fintab/>
+      {/* Fintab is then implemented in a separate tab which is connected to other components includes search.js and addtable.js */}
+      <TableDoc/>
       
     </>
 

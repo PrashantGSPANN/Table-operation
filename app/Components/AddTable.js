@@ -1,24 +1,16 @@
 'use client'
+// adding necessary imports
 import React from 'react'
-import { useState, useEffect } from 'react';
-import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import { useState} from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import Paper from '@mui/material/Paper';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
 import TextField from '@mui/material/TextField';
 
-// herein we made use of a function initialised in Fintab.js for adding new user entry
+// herein we made use of a function initialised in TableDoc.js for adding new user entry
 export default function Addtable({ addUserCallback }) {
 
     const [open, setOpen] = useState(false);
@@ -37,7 +29,7 @@ export default function Addtable({ addUserCallback }) {
                 Add Entry
             </Button>
             <Dialog
-            // Dialog form parameters to intpu the values entered by the user
+            // Dialog form parameters to intput the values entered by the user
                 open={open}
                 onClose={handleClose}
                 PaperProps={{
