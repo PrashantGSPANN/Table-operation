@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Button from '@mui/material/Button';
 
 // Search component
-export default function Search({ searchOperation }) {
+export default function Search({ searchOpperation }) {
   const [input, setInput] = useState('');
 
   // Handle search on Enter key press
@@ -23,7 +23,7 @@ export default function Search({ searchOperation }) {
       <Button
         variant="outlined"
         color="primary"
-        onClick={() => searchOperation(input)}
+        onClick={() => searchOpperation(input)}
       >
         Search
       </Button>

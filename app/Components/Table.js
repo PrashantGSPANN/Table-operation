@@ -134,7 +134,6 @@ export default function TableDoc() {
       {/* Pagination which is handled here including a dropdown method*/}
 
       {/* here in we need to add previous and next tpage element to implement  */}
-
       <Button 
         onClick={prevPage}
       >Prev
@@ -144,7 +143,6 @@ export default function TableDoc() {
       >Next
       </Button>
       current page no. {currentPage} of {npage}.
-
       <label>
         <select
           value={recordsPerPage}
@@ -155,7 +153,6 @@ export default function TableDoc() {
           <option value='20'>20</option>
         </select>
       </label>
-
     </>
   )
 
